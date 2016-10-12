@@ -1,0 +1,103 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Proxima Nova Alt",Helvetica Neue,Helvetica,Arial,sans-serif;
+	/*background-image: url('http://www.sciencefriday.com/wp-content/uploads/2016/09/stars-1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+	background-color: #0096d4;
+	height: 100%;
+}
+
+.flex-container-title {
+	padding: 5% 0%;
+	margin: 50% 0% 5% 0%;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	background: transparent;
+	top: 0;
+	float: inherit;
+	width: 100%;
+}
+
+.flex-container {
+	padding: 5% 0%;
+	margin: 5% 0%;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	background: transparent;
+	top: 0;
+	float: inherit;
+	width: 100%;
+}
+
+.flex-item {
+	width: 90%;
+}
+
+.flex-item-sub {
+	width: 70%;
+}
+
+.flex-item-subber {
+	width: 15%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	width: 60%;
+	padding-left: 18%;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+	.flex-container-title {
+			margin: 33% 0% 5% 0%;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 900px) {
+	.flex-container-title {
+		margin: 7% 0% 5% 0%;
+	}
+
+	.flex-item {
+		width: 70%;
+	}
+
+	.flex-item-sub {
+	width: 30%;
+}
+}
+
+/*Big Desktop*/
+@media (min-width: 1600px) {
+	.flex-container-title {
+		margin: 3% 0% 5% 0%;
+	}
+}
