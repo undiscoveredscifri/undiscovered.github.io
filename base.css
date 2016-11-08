@@ -204,3 +204,17 @@ img {
 		width: 50%;
 	}
 }
+
+/*@media (min-height: 600px) {
+	.flex-item {
+		width: 50%;
+	}
+
+	.flex-item-sub {
+		width: 20%;
+	}
+
+	.flex-container-title {
+		padding: 3% 0%;
+	}
+	}*/

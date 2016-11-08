@@ -57,6 +57,7 @@
   
 </head>
 <body>
+<div class = "containerz">
 <ul class = "flex-container-title">
   <li class = "flex-item">
     <img src="images/name2.svg">
@@ -80,8 +81,17 @@
     <li><a class="soc-facebook" target="_blank" href="https://www.facebook.com/UndiscoveredPod/"></a></li>
     <li><a class="soc-twitter soc-icon-last" target="_blank" href="https://twitter.com/undiscoveredpod"></a></li>
 </ul>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+  var vpHeight = $(window).height();
+
+  var initialScroll = $(window).scrollTop();
+
+  $('.containerz').css('height',vpHeight);
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
