@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("fonts/ProximaNovaA-Regular.otf") format("opentype");
+  src: url("fonts/ProximaNovaA-Semibold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canvas 3D Sans";
+  src: url("fonts/canvas3dsans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
