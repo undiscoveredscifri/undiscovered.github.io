@@ -364,7 +364,7 @@ h1 {
     position: relative;
     color: white;
     position: absolute;
-	margin: 5% 10%;
+	margin: 0% 10%;
     top: 6%;
 }
 
@@ -388,6 +388,8 @@ h1 {
 .super-title {
 	font-size: 105px;
 	text-align: center;
+    line-height: 96px;
+    padding-bottom: 4%;
 	/*text-shadow: 0px 0px 80px rgb(0, 0, 0);*/
 }
 
@@ -1415,7 +1417,7 @@ img.ajmint-unveil {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
 	.related {
 		width: 66%;
 	}
@@ -1425,7 +1427,7 @@ img.ajmint-unveil {
 	}
 
 	.flex-item-main {
-		/*width: 75%;*/
+		margin: 6% 8%;
 	}
 }
 
@@ -1437,11 +1439,46 @@ img.ajmint-unveil {
 
 	.flex-item-main {
 		/*width: 60%;*/
-		/*margin: 15% 0%;*/
+		margin: 6% 5%;
 	}
 
 	.readmore {
 		margin: 2% 0%;
+	}
+}
+
+@media (min-width: 1226px) {
+	.flex-item-main {
+	    margin: 6% 8%;
+	}
+}
+
+@media (min-width: 1251px) {
+	.flex-item-main {
+	    margin: 6% 8%;
+	}
+}
+
+@media (min-width: 1298px) {
+	.super-title {
+		font-size: 100px;
+	}
+
+	.flex-item-main {
+	    margin: 5% 12%;
+	}
+}
+
+
+@media (min-width: 1450px) {
+	.flex-item-main {
+        margin: 5% 4%;
+	}
+}
+
+@media (min-width: 1510px) {
+	.flex-item-main {
+        margin: 5% 12%;
 	}
 }
 
@@ -1467,25 +1504,21 @@ img.ajmint-unveil {
 	}
 }
 
+@media (min-width: 1621px) {
+	.flex-item-main {
+        margin: 5% 12%;
+	}
+}
+
 @media (min-width: 1700px) {
 	.flex-container-title2 {
 		/*padding: 0% 30%;*/
 	}
 }
 
-@media (max-width: 1298px) {
-	.super-title {
-		font-size: 100px;
-	}
-
-	.flex-item-main {
-	    margin: 5% 8%;
-	}
-}
-
 @media (max-width: 1024px) {
 	.flex-item-main {
-		margin: 3% 5%;
+		margin: 10% 5%;
 	}
 
 	.feat {
@@ -1580,7 +1613,7 @@ img.ajmint-unveil {
 }
 
 .flex-item-main {
-	margin: 3% 5%;
+	margin: 6% 5%;
 }
 
 .feat {
@@ -1597,6 +1630,7 @@ img.ajmint-unveil {
 
 .super-title {
 	font-size: 98px;
+    padding-bottom: 4%;
 }
 
 .butt {
@@ -1743,6 +1777,7 @@ img.ajmint-unveil {
 
 	.super-title {
 		font-size: 50px;
+	    line-height: 57px;
 	}
 
 	.desc1 {
