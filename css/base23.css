@@ -287,7 +287,7 @@ h1 {
     width: 240px;
     float: left;
     margin-left: 1%;
-    margin-top: 0.75%;
+    margin-top: 1%;
 
     -webkit-transition: all .45s cubic-bezier(.55,.085,0,.99);
     transition: all .45s cubic-bezier(.55,.085,0,.99);
