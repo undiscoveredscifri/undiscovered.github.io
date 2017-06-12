@@ -2140,6 +2140,10 @@ img.ajmint-unveil {
     margin:0 !important;
 }
 
+.soc-mail:before {
+    content:'\e000';
+}
+
 .soc-facebook:before {
     content:'\e041';
 }
