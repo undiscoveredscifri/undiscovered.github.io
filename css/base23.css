@@ -23,6 +23,16 @@ h1 {
 	font-size: 40px;
 }
 
+.h2-about {
+	margin: 0 auto;
+}
+
+.h3-about {
+	margin: 0 0 5px 0;
+    opacity: 0.9;
+    font-style: italic;
+}
+
 /*hover audio*/
 
 .iframe-hover {
@@ -72,14 +82,210 @@ h1 {
 
 
 
+/*SLIDE MOBILE MENU*/
+
+/**
+ * Menu overview.
+ */
+/*.c-buttons {
+	display: initial;
+}*/
+
+/*.desktop-footer {
+	display: none;
+}*/
+
+.c-button {
+	font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 37px;
+    padding: 0;
+    margin-top: -2px;
+    background-color: #0076A8;
+    border-color: transparent;
+}
+
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: #0076A8;
+  transition: transform 0.3s;
+}
+
+.c-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  color: #fff;
+  background-color: #3184a1;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close:focus {
+  outline: none;
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Mask component
+ */
+
+.c-mask {
+  position: fixed;
+  z-index: 51;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
 
 
 
+.c-menu--slide-bottom {
+  vertical-align: middle;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.c-menu--slide-bottom .c-menu__items {
+  display: grid;
+  text-align: center;
+  font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: 21px 0px;
+}
+
+.c-menu--slide-bottom .c-menu__item {
+  display: inline-block;
+  line-height: 50px;
+}
+
+.c-menu--slide-bottom .c-menu__link {
+  display: block;
+  padding: 0 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.c-menu--slide-bottom .c-menu__close {
+  display: inline-block;
+  padding: 0 24px;
+  height: 60px;
+  line-height: 60px;
+  display: none;
+}
+
+.c-menu--slide-bottom {
+  bottom: 0;
+  left: 0;
+  transform: translateY(60px);
+}
+
+.c-menu--slide-bottom.is-active {
+  transform: translateY(0);
+  height: 300px;
+}
+
+
+/*END SLIDE MENU*/
+
+
+
+.mobile-footer {
+    font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.fadeInUp {
+    /*-webkit-backface-visibility: hidden;*/
+    -webkit-animation: fadeInUpHalf cubic-bezier(0.55, 0.085, 0, 0.99);
+    -ms-animation: fadeInUpHalf cubic-bezier(0.55, 0.085, 0, 0.99);
+    -moz-animation: fadeInUpHalf cubic-bezier(0.55, 0.085, 0, 0.99);
+    animation: fadeInUpHalf cubic-bezier(0.55, 0.085, 0, 0.99);
+    animation-name: fadeInUpHalf;
+    animation-duration: initial;
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+    animation-delay: initial;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+
+    z-index: 1;
+}
 
 
 .big-logo {
     margin: 3% auto;
     width: 50%;
+}
+
+.soc-prof {
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 14px 0 0;
+    float: left;
+}
+
+.about-social {
+	text-decoration: none;
+}
+
+.about-twitter {
+    width: 20px;
+}
+
+.about-twitter:hover {
+    opacity: .75;
+    transition: opacity 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 .hr {
@@ -199,20 +405,31 @@ h1 {
     width: 50px;
 }
 
-.pagenav {
-	z-index: 51;
-	background-color: #0076A8;
-	position: fixed;
-	text-align: center;
-	width: 100%;
+#footer {
+	overflow: visible;
 	height: 61px;
-	bottom: 0;
-	-webkit-box-shadow: 0px -3px 14px 0px rgba(0,0,0,0.45);
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    z-index: 51;
+    background: #0076A8;
+    -webkit-box-shadow: 0px -3px 14px 0px rgba(0,0,0,0.45);
 	-moz-box-shadow: 0px -3px 14px 0px rgba(0,0,0,0.45);
 	box-shadow: 0px -3px 14px 0px rgba(0,0,0,0.45);
 }
 
-.pagenav2 {
+#main-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-align: center;
+    font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 24px;
+}
+
+.pagenav {
 	z-index: 51;
 	background-color: #0096d4;
 	position: fixed;
@@ -226,6 +443,51 @@ h1 {
 	-o-transition: all ease 0.3s;
 	-ms-transition: all ease 0.3s;
 	transition: all ease 0.3s;
+}
+
+.pagenav2 {
+    z-index: 51;
+    background-color: #0096d4;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 61px;
+    top: 0;
+    transition: opacity 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+}
+
+.bottom-nav {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    top: 15px;
+    position: absolute;
+    left: 46%;
+    font-size: 19px;
+}
+
+.bottom-li {
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    height: 42px;
+    position: relative;
+}
+
+.bottom-a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	top: 50%;
 }
 
 #main {
@@ -276,11 +538,15 @@ h1 {
 }
 
 .header_logo:hover {
-    -webkit-transform: translate3d(10px,0,0);
+    /*-webkit-transform: translate3d(10px,0,0);
     -ms-transform: translate3d(10px,0,0);
     transform: translate3d(10px,0,0);
+    margin-left: 2.1%;*/
     opacity: .75;
-    margin-left: 2.1%;
+}
+
+.header-footer {
+
 }
 
 .header_logo2 {
@@ -306,7 +572,7 @@ h1 {
     -ms-transform: translate3d(10px,0,0);
     transform: translate3d(10px,0,0);
     opacity: .75;
-    margin-left: 2.1%;
+    margin-left: 1.5%;
 }
 
 .flex-container-title {
@@ -1452,6 +1718,14 @@ img.ajmint-unveil {
 		/*width: 90%;*/
 	}
 
+	.desktop-footer {
+		display: initial;
+	}
+
+	.c-buttons {
+		display: none;
+	}
+
 }
 
 @media (min-width: 1025px) {
@@ -1573,6 +1847,14 @@ img.ajmint-unveil {
 
 @media (max-width: 920px) {
 
+	/*.c-buttons {
+		display: none;
+	}
+
+	.desktop-footer {
+		display: inherit;
+	}*/
+
 	/*.graphic {
 		padding: 0 2em;
 	}*/
@@ -1617,6 +1899,18 @@ img.ajmint-unveil {
 
 @media (max-width: 768px) {
 
+.h1-margin {
+	margin-top: 61px;
+}
+
+.c-buttons {
+		display: inherit;
+	}
+
+.desktop-footer {
+	display: none;
+}
+
 .video {
 	display: none;
 }
@@ -1624,6 +1918,7 @@ img.ajmint-unveil {
 .header_logo {
 	margin-top: 1.1%;
 	margin-left: 2%;
+	float: none;
 }
 
 .soc {
@@ -2027,6 +2322,11 @@ img.ajmint-unveil {
 	.header_logo {
 	    margin-left: 4%;
 	    margin-top: 2%;
+	}
+
+	.header-footer {
+		margin: 0;
+		float: none;
 	}
 
 	.volume {

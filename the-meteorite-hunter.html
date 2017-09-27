@@ -18,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <link rel="stylesheet" type="text/css" href="css/thirdparty/flexslider.css">
 <link rel="stylesheet" type="text/css" href="css/thirdparty/magnific-popup.css">
+<link rel="stylesheet" href="css/animate.css">
   
 <meta property="og:url" content="http://www.undiscoveredpodcast.org/" />
 <meta property="og:site_name" content="Undiscovered" />
@@ -61,7 +62,11 @@
 </div>
 <!-- </div> -->
 
+<div id="o-wrapper" class="o-wrapper">
+
 <div class = "feat">
+
+<div class = "animated fadeInUp">
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="images/meteorite-cover.jpg"></div>
 
@@ -233,41 +238,92 @@
 
 
 
-<div class = "pagenav">
-  <a href="http://www.sciencefriday.com" target="_blank" >
-    <div class = "header">
-      <img class = "header_logo" src="images/logo.svg" alt = "Science Friday logo">
-    </div>
-  </a>
-
-  <ul class="soc">
-
-    <li>
-      <!-- <div>Contact us: </div> -->
-      <a href="mailto:undiscovered@sciencefriday.com" title = "Contact us"> 
-        <img class = "jar" style = "width: 35px; top: 5%;" src="images/mail.svg">
-      </a>
-    </li>
-    
-    <li><a class="soc-facebook" href="https://www.facebook.com/UndiscoveredPod/" target="_blank" ></a></li>
-
-    <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/undiscoveredpod" target="_blank" ></a></li>
-
-    <li>
-      <a href="https://itunes.apple.com/us/podcast/undiscovered/id1229128411?mt=2" target = "_blank" title = "Subscribe on Apple Podcasts"> 
-        <img class = "jar" style = "width: 35px; top: 5%;" src="images/itunes.svg">
-      </a>
-    </li>
-
-    <li>
-      <a href="https://feeds.feedburner.com/pri/undiscovered" target = "_blank"> 
-
-        <img class = "jar" src="images/rss-symbol.svg">
-
-      </a>
-    </li>
-  </ul>
+<!-- Mask -->
 </div>
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<footer id = "footer">
+  <nav>
+    <!-- Mobile/tab menu -->
+    <div class="c-buttons">
+      <button id="c-button--slide-bottom" class="c-button">MENU</button>
+
+      <nav id="c-menu--slide-bottom" class="c-menu c-menu--slide-bottom">
+        <button class="c-menu__close">
+          <strong>x</strong>
+        </button>
+        <ul class="c-menu__items">
+          <li class="c-menu__item"><a href="about.html" class="c-menu__link">About</a></li>
+          <li class="c-menu__item"><a href="music.html" class="c-menu__link">Music</a></li>
+          <li class="c-menu__item"><a href="how-to-listen.html" class="c-menu__link">How To Listen</a></li>
+
+          <div class = "soc" style = "position: relative; height: 56px;">
+
+          <li><a href="mailto:undiscovered@sciencefriday.com" title = "Contact us"> 
+            <img class = "jar" style = "width: 35px; top: 5%;" src="images/mail.svg">
+          </a>
+          </li>
+
+          <li><a class="soc-facebook" href="https://www.facebook.com/UndiscoveredPod/" target="_blank" ></a></li>
+
+          <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/undiscoveredpod" target="_blank" ></a></li>
+          </div>
+
+          <li class = "c-menu__item">
+          <a href="http://www.sciencefriday.com" target="_blank" >
+            <div class = "header">
+              <img class = "header_logo header-footer" src="images/logo.svg" alt = "Science Friday logo">
+            </div>
+          </a>
+          </li>
+        </ul>
+      </nav><!-- /c-menu slide-bottom -->
+
+        <!-- <div class="mobile-footer">MENU</div> -->
+    </div>
+
+
+    <div class = "desktop-footer">
+
+      <a href="http://www.sciencefriday.com" target="_blank" >
+        <div class = "header">
+          <img class = "header_logo" src="images/logo.svg" alt = "Science Friday logo">
+        </div>
+      </a>
+
+      <ul id = "main-menu">
+        <li class = "bottom-li">
+          <a class = "bottom-a" href="about.html">About</a>
+        </li>
+        <li class = "bottom-li">
+          <a class = "bottom-a" href="music.html">Music</a>
+        </li>
+        <li class = "bottom-li">
+          <a class = "bottom-a" href="how-to-listen.html">How To Listen</a>
+        </li>
+      </ul>
+
+      <ul class="soc">
+
+        <li>
+          <a href="mailto:undiscovered@sciencefriday.com" title = "Contact us"> 
+            <img class = "jar" style = "width: 35px; top: 5%;" src="images/mail.svg">
+          </a>
+        </li>
+
+        <li><a class="soc-facebook" href="https://www.facebook.com/UndiscoveredPod/" target="_blank" ></a></li>
+
+        <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/undiscoveredpod" target="_blank" ></a></li>
+        
+      </ul>
+  </div>
+
+  </nav>
+  
+
+
+</footer>
   
 
 <script src="js/thirdparty/jquery.1.10.2.min.js"></script>
@@ -284,15 +340,26 @@
 <script src="js/scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/parallax.js"></script>
+<script src="js/slide.js"></script>
 
 
 
-<script> 
-  // var $alt = $('#alt-header');
-  // var $main = $('#main');
-  // $(document).scroll(function() {
-  //     $alt.css({display: $(this).scrollTop() > 230? "background-color":"transparent"});
-  // });
+<script>
+    /**
+   * Slide bottom instantiation and action.
+   */
+  var slideBottom = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-bottom',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+  var slideBottomBtn = document.querySelector('#c-button--slide-bottom');
+  
+  slideBottomBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideBottom.open();
+  });
 </script>
 
 
