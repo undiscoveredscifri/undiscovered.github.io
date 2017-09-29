@@ -23,6 +23,18 @@ h1 {
 	font-size: 40px;
 }
 
+h4 {
+    font-weight: 600;
+}
+
+p {
+	margin: 2em 0;
+}
+/*
+strong {
+	font-family: "Proxima Nova Alt Bold";
+}*/
+
 .h2-about {
 	margin: 0 auto;
 }
@@ -82,18 +94,13 @@ h1 {
 
 
 
-/*SLIDE MOBILE MENU*/
 
-/**
- * Menu overview.
- */
-/*.c-buttons {
-	display: initial;
-}*/
+/* -------------------------------- 
 
-/*.desktop-footer {
-	display: none;
-}*/
+BEGIN SLIDE MOBILE MENU
+
+-------------------------------- */
+
 
 .c-button {
 	font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -227,8 +234,203 @@ body.has-active-menu {
 }
 
 
-/*END SLIDE MENU*/
+/* -------------------------------- 
 
+End SLIDE MOBILE MENU
+
+-------------------------------- */
+
+.img-replace {
+  /* replace text with an image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+}
+
+/*.cd-popup-trigger {
+  display: block;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  margin: 3em auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50em;
+  background: #35a785;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-popup-trigger {
+    margin: 6em auto;
+  }
+}*/
+
+/* -------------------------------- 
+
+xpopup 
+
+-------------------------------- */
+.cd-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-popup.is-visible {
+  opacity: 1;
+  z-index: 100;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	margin: 4em auto;
+	background: #0096d4;
+	border: solid #fbfbfb 3px;
+	color: #fbfbfb;
+	/*border-radius: .25em .25em .4em .4em;*/
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-webkit-transform: translateY(40px);
+	-moz-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	-o-transform: translateY(40px);
+	transform: translateY(40px);
+	/* Force Hardware Acceleration in WebKit */
+	-webkit-backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.cd-popup-container p {
+	padding: 0em 1em;
+	font-family: "Proxima Nova Alt",Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align: left;
+	line-height: 26px;
+	font-size: 23px;
+    font-weight: 600;
+}
+
+/*strong {
+	font-family: "Proxima Nova Alt B",Helvetica Neue,Helvetica,Arial,sans-serif;
+}*/
+
+.proxima {
+	font-family: "Proxima Nova Alt",Helvetica Neue,Helvetica,Arial,sans-serif;
+	line-height: 35px;
+	text-align: left;
+	padding: 0em 23px;
+	font-size: 34px;
+}
+
+.cd-popup-container .cd-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-popup-container .cd-buttons li {
+  float: left;
+  width: 50%;
+  list-style: none;
+}
+.cd-popup-container .cd-buttons a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.cd-popup-container .cd-buttons li:first-child a {
+  background: #fc7169;
+  border-radius: 0 0 0 .25em;
+}
+.no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
+  background-color: #fc8982;
+}
+.cd-popup-container .cd-buttons li:last-child a {
+  background: #b6bece;
+  border-radius: 0 0 .25em 0;
+}
+.no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
+  background-color: #c5ccd8;
+}
+.cd-popup-container .cd-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #fbfbfb;
+}
+.cd-popup-container .cd-popup-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+.cd-popup-container .cd-popup-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 8px;
+}
+.is-visible .cd-popup-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-popup-container {
+    margin: 3em auto;
+  }
+}
+
+
+
+
+
+/* -------------------------------- 
+
+BEGIN POP UP CODE
+
+-------------------------------- */
 
 
 .mobile-footer {
@@ -448,6 +650,7 @@ body.has-active-menu {
 .pagenav2 {
     z-index: 51;
     background-color: #0096d4;
+    /*opacity: .9;*/
     position: fixed;
     text-align: center;
     width: 100%;
@@ -481,6 +684,7 @@ body.has-active-menu {
     vertical-align: top;
     height: 42px;
     position: relative;
+    left: -40px;
 }
 
 .bottom-a {
@@ -718,6 +922,7 @@ hr {
     width: 50%;
     height: auto;
     font-family: "Proxima Nova Alt",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
 }
 
 .story {
@@ -1691,6 +1896,20 @@ img.ajmint-unveil {
 
 /*13 inch*/
 @media (max-height: 676px) {
+	.cd-popup-container {
+		margin: 2em auto;
+	}
+
+	.cd-popup-container p {
+		line-height: 26px;
+		font-size: 21px;
+	}
+
+	.proxima {
+		font-size: 33px;
+		line-height: 0px;
+	}
+
 	.flex-container-title {
 		padding: 0% 7%;
 	}
@@ -1899,8 +2118,24 @@ img.ajmint-unveil {
 
 @media (max-width: 768px) {
 
+.cd-popup-container {
+	    margin: 11em auto;
+	}
+
+	.proxima {
+	    padding: 0em 15px;
+	}
+
+	.cd-popup-container p {
+	    font-size: 20px;
+	}
+
 .h1-margin {
 	margin-top: 61px;
+}
+
+.h1-margin-sub {
+	margin-top: -61px;
 }
 
 .c-buttons {
@@ -2095,6 +2330,7 @@ img.ajmint-unveil {
 }
 
 @media (max-width: 720px) {
+
 	.flex-item-main {
 	    margin: 9% 5%;
 	}
@@ -2118,6 +2354,22 @@ img.ajmint-unveil {
 }
 
 @media (max-width: 560px) {
+
+	.cd-popup-container {
+	    margin: 1em auto;
+        width: 90%;
+	}
+
+	.cd-popup-container p {
+	    font-size: 16px;
+        margin: 1em auto;
+	}
+
+	.proxima {
+	    font-size: 22px;
+	    line-height: 32px;
+	}
+
 	#header ul.inline.audio {
 		position: absolute;
 		top: 10px;
@@ -2155,14 +2407,18 @@ img.ajmint-unveil {
 
 @media (max-width: 480px) {
 
-.flex-item-image {
-	width: 100%;
-	padding-right: 0;
-}
+	.proxima {
 
-.flex-item-heddek {
-	width: 100%;
-}
+	}
+
+	.flex-item-image {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.flex-item-heddek {
+		width: 100%;
+	}
 
 	.panel#p0 #cover-text .subhead-displayed {
 		font-size: 1em;
@@ -2337,6 +2593,14 @@ img.ajmint-unveil {
 
 /*iPhone 5/SE*/
 @media (max-width: 320px) {
+
+.proxima {
+    font-size: 18px;
+}
+
+.cd-popup-container p {
+    font-size: 14px;
+}
 
 .super-title {
 	font-size: 40px;

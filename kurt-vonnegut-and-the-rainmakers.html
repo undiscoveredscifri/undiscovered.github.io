@@ -219,6 +219,33 @@
 
 <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
 
+<!-- POP UP -->
+<div class="cd-popup" role="alert">
+  <div class="cd-popup-container">
+    <div class="panel first-panel" >
+      <div class="textbox">
+        <div class="textbox-block">
+
+          <h1>How To Listen</h1>
+
+          <p>You can listen to all of season 1 of Undiscovered on this site! You can also listen on your favorite podcast app.</p>
+
+          <h2 class = "proxima">Do you use an iPhone or Mac?</h2>
+
+          <p>You can find us on <a href="https://itunes.apple.com/us/podcast/undiscovered/id1229128411?mt=2" target="_blank"> Apple Podcasts</a>.</p>
+
+          <h2 class = "proxima">You can also find us on:</h2>
+          <p><a href="https://www.stitcher.com/podcast/public-radio-international/undiscovered-2" target="_blank">Stitcher</a>, <a href="https://open.spotify.com/show/2H99RbJiHEN5cQ59fFm3R1" target="_blank">Spotify</a>, <a href="https://play.radiopublic.com/undiscovered-8gJ2Ln/ep/s1!e52e67111eeaedae819caee58a6644c9f16b0807" target="_blank">RadioPublic</a>, or <a href="https://overcast.fm/itunes1229128411/undiscovered" target="_blank">Overcast</a>.</p>
+
+          <p>And, if your favorite app isn't listed here, you can use our <a href="http://feeds.feedburner.com/pri/undiscovered" target="_blank">RSS feed</a>.</p>
+
+        </div>
+      </div>
+    </div>
+    <a href="#0" class="cd-popup-close img-replace">Close</a>
+  </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
 <footer id = "footer">
   <nav>
     <!-- Mobile/tab menu -->
@@ -232,7 +259,7 @@
         <ul class="c-menu__items">
           <li class="c-menu__item"><a href="about.html" class="c-menu__link">About</a></li>
           <li class="c-menu__item"><a href="music.html" class="c-menu__link">Music</a></li>
-          <li class="c-menu__item"><a href="how-to-listen.html" class="c-menu__link">How To Listen</a></li>
+          <li class="c-menu__item"><a href="#0" class="c-menu__link cd-popup-trigger">How To Listen</a></li>
 
           <div class = "soc" style = "position: relative; height: 56px;">
 
@@ -276,7 +303,7 @@
           <a class = "bottom-a" href="music.html">Music</a>
         </li>
         <li class = "bottom-li">
-          <a class = "bottom-a" href="how-to-listen.html">How To Listen</a>
+          <a href="#0" class="bottom-a cd-popup-trigger">How To Listen</a>
         </li>
       </ul>
 
@@ -300,6 +327,8 @@
 
 
 </footer>
+
+
   
 
 <script src="js/thirdparty/jquery.1.10.2.min.js"></script>
@@ -315,7 +344,6 @@
 <script src="js/main.js"></script>
 <script src="js/scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/parallax.js"></script>
 <script src="js/slide.js"></script>
 
 
@@ -336,6 +364,33 @@
     e.preventDefault;
     slideBottom.open();
   });
+</script>
+
+
+<!-- POP UP -->
+
+<script>
+  jQuery(document).ready(function($){
+  //open popup
+  $('.cd-popup-trigger').on('click', function(event){
+    event.preventDefault();
+    $('.cd-popup').addClass('is-visible');
+  });
+  
+  //close popup
+  $('.cd-popup').on('click', function(event){
+    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  //close popup when clicking the esc keyboard button
+  $(document).keyup(function(event){
+      if(event.which=='27'){
+        $('.cd-popup').removeClass('is-visible');
+      }
+    });
+});
 </script>
 
 
