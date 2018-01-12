@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("fonts/ProximaNovaA-Regular.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("fonts/ProximaNovaA-Semibold.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("fonts/ProximaNovaA-Bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("fonts/ProximaNovaA-Extrabld.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canvas 3D Sans";
+  src: url("fonts/canvas3dsans.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -21,6 +56,7 @@ img {
 h1 {
 	font-family: "Canvas 3D Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-size: 40px;
+  font-weight: 
 }
 
 h4 {
