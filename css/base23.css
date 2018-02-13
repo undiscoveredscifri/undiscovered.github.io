@@ -65,6 +65,8 @@ h4 {
 
 p {
 	margin: 2em 0;
+  font-weight: 100;
+  font-size: 1.1em;
 }
 
 .toggle-arrow {
