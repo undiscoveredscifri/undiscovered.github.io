@@ -2019,19 +2019,19 @@ img.ajmint-unveil {
 /*Blackbaud CSS*/
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBFormFieldContainer {
-  color: #fbfbfb;
+  color: #fbfbfb !important;;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBFormChecklist {
-  border: none;
+  border: none !important;;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBDFormSectionComments .BBFormFieldLabel {
-  margin-left: 0;
+  margin-left: 0 !important;;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBDFormSectionComments .BBFormTextArea {
-  margin-left: 0;
+  margin-left: 0 !important;;
 }
 
 
