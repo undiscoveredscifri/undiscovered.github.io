@@ -1546,6 +1546,7 @@ img[width="1"] {
 	width: 100%;
 	max-width: 620px;
 	padding: 2em 0;
+  margin: 2em 0;
 }
 
 .textbox.center .textbox-block {
@@ -2019,19 +2020,19 @@ img.ajmint-unveil {
 /*Blackbaud CSS*/
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBFormFieldContainer {
-  color: #fbfbfb !important;;
+  color: #fbfbfb !important;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBFormChecklist {
-  border: none !important;;
+  border: none !important;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBDFormSectionComments .BBFormFieldLabel {
-  margin-left: 0 !important;;
+  margin-left: 0 !important;
 }
 
 .BBFormContainer[data-bbox-part-id="db46aae5-05a8-48a9-910c-0b962a1697e3"] .BBDFormSectionComments .BBFormTextArea {
-  margin-left: 0 !important;;
+  margin-left: 0 !important;
 }
 
 
