@@ -1566,6 +1566,10 @@ img[width="1"] {
 	/*padding-right: 10px;*/
 }
 
+.center {
+  text-align: center;
+}
+
 .textbox.center {
 	margin: 0 auto;
 	/*float: none;*/
