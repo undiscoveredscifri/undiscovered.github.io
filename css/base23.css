@@ -886,8 +886,9 @@ BEGIN POP UP CODE
 .donate {
   background: #fbfbfb;
   border-radius: 5px;
-  margin: 5px 15px 0px 13px;
-  padding: 7px 14px 4px 19px;
+  margin: 8px 15px 0px 13px;
+  padding: 4px 8px 1px 12px;
+  line-height: 38px;
 }
 
 .from {
@@ -947,6 +948,21 @@ BEGIN POP UP CODE
     background-size: cover;
 }
 
+.flex {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .flex-container-story {
 /*	padding: 5% 0%;
 	margin: 11% 0%;*/
@@ -978,6 +994,10 @@ BEGIN POP UP CODE
     background-size: cover;*/
 }
 
+.card {
+  width: 31%;
+}
+
 /*This was the desktop style*/
 .flex-item-main {
 	/*Edited 3/21*/
@@ -1001,12 +1021,21 @@ BEGIN POP UP CODE
     padding-right: 40px;
 }
 
+.image-card {
+  width: 100%;
+  padding-right: 0;
+}
+
 .flex-item-heddek {
 	/*width: 50%;*/
 	/*margin: 18% 0%;*/
     width: 70%;
 	z-index: 2;
     position: relative;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .super-title {
@@ -1024,7 +1053,7 @@ BEGIN POP UP CODE
 }
 
 .apple-podcasts {
-  width: 200px;
+  width: 180px;
 }
 
 video {
@@ -1546,7 +1575,6 @@ img[width="1"] {
 	width: 100%;
 	max-width: 620px;
 	padding: 2em 0;
-  margin: 2em 0;
 }
 
 .textbox.center .textbox-block {
@@ -1612,6 +1640,10 @@ img[width="1"] {
 	line-height: 1.3em;
 	font-family: "Proxima Nova Alt",Helvetica Neue,Helvetica,Arial,sans-serif;
 	margin-top: 1em;
+}
+
+.no-margin {
+  margin-top: 0;
 }
 
 /* styles inline because of variables */
