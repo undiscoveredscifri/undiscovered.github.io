@@ -51,16 +51,33 @@
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+</script> 
+
   
 </head>
 <body>
-<!-- <div id = "alt-header"> -->
+
+<!-- <div id="header"></div> -->
+
+<!-- Logo -->
 <div class = "pagenav2">
   <div class = "header_logo2">
     <a href="index.html"><img src="images/name2.svg" alt = "logo"></a>
+    <!-- from science friday -->
+    <!-- <br>
+    <span class = "from">from</span> <span><img class = "header_logo" src="images/logo.svg" alt = "Science Friday logo"></span> -->
   </div>
+
+
+  <!-- <div class = "subscribe donate"><a style="text-decoration: none; color: #0096d4;" href = "https://itunes.apple.com/us/podcast/undiscovered/id1229128411?mt=2" target = "_blank">Donate</a></div> -->
+
+  <!-- <div class = "subscribe"><a style="text-decoration: none;" href = "https://itunes.apple.com/us/podcast/undiscovered/id1229128411?mt=2" target = "_blank">Subscribe</a></div> -->
 </div>
-<!-- </div> -->
 
 <div id="o-wrapper" class="o-wrapper">
 
@@ -80,7 +97,9 @@
     <div class="bylines-top-bottom bylines-top">
     <div class="bylines-top-bottom-content" style="text-align: center;">
 
-      <p><i>Published on May 23, 2017</i></p>
+    <p><i>Published on May 23, 2017</i></p>
+
+    <!-- <a href="https://itunes.apple.com/us/podcast/undiscovered/id1229128411?mt=2" target = "_blank"><img class = "apple-podcasts" src="images/apple-podcasts.svg" alt = "apple podcasts badge"></a> -->
 
     </div>
   </div>
@@ -195,6 +214,8 @@
       <img class = "hr" src="images/hr.svg">
 
       <p><em>Founding support for Undiscovered comes from the <a href="https://www.templeton.org/" target = "_blank">John Templeton Foundation</a>.</em></p>
+
+      <div id="footer"></div>
 
     </div>
   </div>
