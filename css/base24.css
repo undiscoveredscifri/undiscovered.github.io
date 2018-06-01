@@ -721,7 +721,7 @@ BEGIN POP UP CODE
 
 #footer {
 	overflow: visible;
-	height: 61px;
+	height: 57px;
 	position: fixed;
     bottom: 0;
     left: 0;
@@ -2757,6 +2757,10 @@ img.ajmint-unveil {
   .home-donate {
     display: flex;
     text-align: center;
+  }
+
+  .about-padding {
+    padding-top: 24%;
   }
 
 
