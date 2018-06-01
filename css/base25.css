@@ -175,6 +175,10 @@ strong {
   font-weight: 300;
 }
 
+.about-padding {
+  padding-top: 5%;
+}
+
 /*hover audio*/
 
 .iframe-hover {
