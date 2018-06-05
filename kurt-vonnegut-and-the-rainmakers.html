@@ -49,18 +49,20 @@
 <meta name="twitter:app:id:googleplay" content="">
 
 <!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/thirdparty/jquery.1.10.2.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#misc-ep").load("misc-ep.html");
+      $("#navbar").load("navbar.html");  
+    });
+</script> 
 
   
 </head>
 <body>
-<!-- <div id = "alt-header"> -->
-<div class = "pagenav2">
-  <div class = "header_logo2">
-    <a href="index.html"><img src="images/name2.svg" alt = "logo"></a>
-  </div>
-</div>
-<!-- </div> -->
+
+<div id="header"></div>
 
 <div id="o-wrapper" class="o-wrapper">
 
@@ -198,17 +200,13 @@
 
     <p>This episode of Undiscovered was reported and produced by <a href="https://twitter.com/ElahFeder" target="_blank">Elah Feder</a> and <a href="https://twitter.com/annieminoff" target="_blank">Annie Minoff</a>. Editing by <a href="https://twitter.com/cintagliata" target="_blank">Christopher Intagliata</a>. Archival material was provided with help from Chris Hunter of <a href="http://www.misci.org/" target = "_blank">miSci</a> in Schenectady, as well as Scott Vonnegut and Jim Schaefer. Fact-checking help by Michelle Harris. Voice acting by <a href="https://twitter.com/cbquist" target = "_blank">Charles Bergquist</a>, <a href="https://twitter.com/ctaylsaurus" target = "_blank">Christie Taylor</a>, <a href="https://twitter.com/lgroskin" target = "_blank">Luke Groskin</a>, and <a href="https://twitter.com/iraflatow" target = "_blank">Ira Flatow</a>. Original music by <a href="https://soundcloud.com/dpeterschmidt" target="_blank">Daniel Peterschmidt</a>. Our theme music is by <a href="http://robotandproud.com/" target="_blank">I am Robot and Proud</a>. Art for this episode by <a href="http://www.clairemerchlinsky.com/" target="_blank">Claire Merchlinsky</a>. Thanks to Science Friday’s <a href="https://twitter.com/DannyD_310?lang=en" target="_blank">Danielle Dana</a>, <a href="https://twitter.com/el_skootro?lang=en" target="_blank">Christian Skotte</a>, <a href="https://twitter.com/bechter?lang=en" target="_blank">Brandon Echter</a>, and <a href="https://twitter.com/RMBouton?lang=en" target="_blank">Rachel Bouton</a>.</p>
 
-      <img class = "hr" src="images/hr.svg">
-
-      <p><em>Founding support for Undiscovered comes from the <a href="https://www.templeton.org/" target = "_blank">John Templeton Foundation</a>.</em></p>
+ <div id = "misc-ep"></div>
 
     </div>
   </div>
 </div>
 
 </div>
-
-
 
 <!-- Mask -->
 </div>

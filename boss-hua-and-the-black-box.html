@@ -48,18 +48,20 @@
 <meta name="twitter:app:id:ipad" content="">
 <meta name="twitter:app:id:googleplay" content="">
 
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
+<!-- Jquery -->
+<script src="js/thirdparty/jquery.1.10.2.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#misc-ep").load("misc-ep.html");
+      $("#navbar").load("navbar.html");  
+    });
+</script> 
   
 </head>
 <body>
-<div class = "pagenav2">
-  <div class = "header_logo2">
-    <a href="index.html"><img src="images/name2.svg" alt = "logo"></a>
-  </div>
-</div>
+
+<div id="header"></div>
 
 <div id="o-wrapper" class="o-wrapper">
 
@@ -326,20 +328,13 @@
 
     </div> -->
 
-
-
-
-    <img class = "hr" src="images/hr.svg">
-
-    <p><em>Founding support for Undiscovered comes from the <a href="https://www.templeton.org/" target = "_blank">John Templeton Foundation</a>.</em></p>
+<div id = "misc-ep"></div>
 
     </div>
   </div>
 </div>
 
 </div>
-
-
 
 <!-- Mask -->
 </div>
@@ -353,9 +348,9 @@
       <div class="textbox">
         <div class="textbox-block">
 
-          <h1>How To Listen</h1>
+          <h1 style="margin-top:0;">How To Listen</h1>
 
-          <p>You can listen to all of season 1 of Undiscovered on this site! You can also listen on your favorite podcast app.</p>
+          <p>Subscribe in your favorite podcast app!</p>
 
           <h2 class = "proxima">Do you use an iPhone or Mac?</h2>
 
@@ -416,7 +411,7 @@
 
     <div class = "desktop-footer">
 
-      <a href="http://www.sciencefriday.com" target="_blank" >
+      <a href="http://www.sciencefriday.com" target="_blank" tabindex="5">
         <div class = "header">
           <img class = "header_logo" src="images/logo.svg" alt = "Science Friday logo">
         </div>
@@ -424,27 +419,27 @@
 
       <ul id = "main-menu">
         <li class = "bottom-li">
-          <a class = "bottom-a" href="about.html">About</a>
+          <a class = "bottom-a" href="about.html" tabindex="6">About</a>
         </li>
         <li class = "bottom-li">
-          <a class = "bottom-a" href="music.html">Music</a>
+          <a class = "bottom-a" href="music.html" tabindex="7">Music</a>
         </li>
         <li class = "bottom-li">
-          <a href="#0" class="bottom-a cd-popup-trigger">How To Listen</a>
+          <a href="#0" class="bottom-a cd-popup-trigger" tabindex="8">How To Listen</a>
         </li>
       </ul>
 
       <ul class="soc">
 
         <li>
-          <a href="mailto:undiscovered@sciencefriday.com" title = "Contact us"> 
+          <a href="mailto:undiscovered@sciencefriday.com" title = "Contact us" tabindex="9"> 
             <img class = "jar" style = "width: 35px; top: 5%;" src="images/mail.svg">
           </a>
         </li>
 
-        <li><a class="soc-facebook" href="https://www.facebook.com/UndiscoveredPod/" target="_blank" ></a></li>
+        <li><a class="soc-facebook" href="https://www.facebook.com/UndiscoveredPod/" target="_blank" tabindex="10"></a></li>
 
-        <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/undiscoveredpod" target="_blank" ></a></li>
+        <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/undiscoveredpod" target="_blank" tabindex="11"></a></li>
         
       </ul>
   </div>
@@ -454,7 +449,6 @@
 
 
 </footer>
-
 
   
 
