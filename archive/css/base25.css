@@ -783,7 +783,7 @@ BEGIN POP UP CODE
     text-align: center;
     width: 100%;
     height: 61px;
-    top: 0;
+    top: 48px;
 
     /*drop shadow*/
     -webkit-box-shadow: 0px -3px 26px 0px rgba(0,0,0,0.5);
@@ -798,9 +798,9 @@ BEGIN POP UP CODE
     transition: all ease 0.3s;
 }
 
-.absolute {
+/*.absolute {
   position: absolute;
-}
+}*/
 
 }
 
