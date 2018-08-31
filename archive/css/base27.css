@@ -851,6 +851,10 @@ BEGIN POP UP CODE
 	z-index: 1 !important;
 }
 
+.parallax-mirrow {
+  top: 110px;
+}
+
 
 /*This is just mobile, need tablet and desktop styles*/
 .header_logo {
