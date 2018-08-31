@@ -844,6 +844,7 @@ BEGIN POP UP CODE
 
 .parallax-window {
 	width: 100%;
+  top: 110px;
 	height: 500px;
 	margin-top: 61px;
 	background:transparent;
